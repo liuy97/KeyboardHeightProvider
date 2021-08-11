@@ -11,7 +11,6 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
-        implementation 'com.github.User:KeyboardHeightProvider:1.0.1'
     }
 }
 
@@ -19,6 +18,9 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+    dependencies {
+        implementation 'com.github.liuy97:KeyboardHeightProvider:1.0.1'
     }
 }
 

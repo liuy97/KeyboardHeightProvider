@@ -9,13 +9,16 @@ For other modes of soft input mode, you're out of luck. As the android brick-hea
 
 ## Set up
 
-Note for existing users:
-The package name has been changed to a domain name I own, as part of maven requirements.
-
 Add the following dependency to your project:
 
+repositories {
+  maven {
+    url  "https://jitpack.io"
+  }
+}
+
 ```gradle
-    implementation 'ro.holdone.keyboardHeightProvider:1.0.1'
+    implementation 'com.github.liuy97:KeyboardHeightProvider:v1.0.1'
 ```
 
 ## Usage

@@ -1,31 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-ext {
-    PUBLISH_GROUP_ID = 'ro.holdone'
-    PUBLISH_ARTIFACT_ID = 'keyboardheightprovider'
-    PUBLISH_VERSION = "1.0.1"
-
-    POM_NAME = 'keyboardheightprovider'
-    POM_PACKAGING = 'aar'
-
-    POM_DESCRIPTION = 'Keyboard detection library.'
-    POM_INCEPTION_YEAR = '2021'
-
-    POM_URL = 'https://github.com/Crysis21/KeyboardHeightProvider'
-    POM_SCM_URL = 'https://github.com/Crysis21/KeyboardHeightProvider'
-    POM_SCM_CONNECTION = 'scm:git@github.com:Crysis21/KeyboardHeightProvider.git'
-    POM_SCM_DEV_CONNECTION = 'scm:git@github.com:Crysis21/KeyboardHeightProvider.git'
-
-    POM_LICENCE_NAME = 'The Apache Software License, Version 2.0'
-    POM_LICENCE_URL = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    POM_LICENCE_DIST = 'repo'
-
-    POM_DEVELOPER_ID = 'Crysis21'
-    POM_DEVELOPER_NAME = 'Cristian Holdunu'
-    POM_DEVELOPER_URL = 'https://holdone.ro'
-    POM_DEVELOPER_EMAIL = "cristian.holdunu@gmail.com"
-}
+group = 'com.github.jitpack'
 
 apply from: "${rootProject.projectDir}/scripts/gradle-publishing.gradle"
 
@@ -64,6 +40,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'com.jakewharton.timber:timber:4.7.1'
 }
