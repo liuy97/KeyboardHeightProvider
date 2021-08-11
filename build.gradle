@@ -3,7 +3,7 @@
 buildscript {
     ext.kotlin_version = "1.4.32"
     repositories {
-        mavenCentral()
+        jcenter()
         google()
         maven { url "https://jitpack.io" }
     }
@@ -19,8 +19,6 @@ allprojects {
         google()
         mavenCentral()
     }
-    dependencies {
-        implementation 'com.github.liuy97:KeyboardHeightProvider:1.0.1'
-    }
+
 }
 

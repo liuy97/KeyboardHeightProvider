@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.github.jitpack'
-
-apply from: "${rootProject.projectDir}/scripts/gradle-publishing.gradle"
+group = 'com.github.liuy97'
+project.archivesBaseName = 'keyboardheightprovider'
+version = '1.0.1'
 
 android {
     compileSdkVersion 30
